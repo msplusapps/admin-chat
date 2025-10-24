@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Widget Demo</title>
+    <link rel="stylesheet" type="text/css" href="widget.css">
+</head>
+<body>
+    <h1>Chat Widget Demo</h1>
+    <p>This is a demo of the chat widget.</p>
+
+    <!-- Chat widget will be embedded here -->
+    <div id="chat-widget-container"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="widget.js"></script>
+    <script>
+        ChatWidget.init({
+            container: '#chat-widget-container',
+            apiUrl: 'api.php'
+        });
+    </script>
+</body>
+</html>
