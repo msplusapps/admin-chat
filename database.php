@@ -23,6 +23,4 @@ $db->exec("CREATE TABLE IF NOT EXISTS messages (
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (conversation_id) REFERENCES conversations (id)
 )");
-
-echo "Database and tables created successfully.";
 ?>
