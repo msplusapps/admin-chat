@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Chat Widget Demo</title>
-    <link rel="stylesheet" type="text/css" href="widget.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <h1>Chat Widget Demo</h1>
@@ -12,11 +12,11 @@
     <div id="chat-widget-container"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="widget.js"></script>
+    <script src="/widget/widget.js"></script>
     <script>
         ChatWidget.init({
             container: '#chat-widget-container',
-            apiUrl: 'api.php'
+            apiUrl: '/widget/api'
         });
     </script>
 </body>
